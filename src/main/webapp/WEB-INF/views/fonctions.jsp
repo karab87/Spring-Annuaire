@@ -6,7 +6,7 @@
 
 
 <head>
-
+<title>Fonctions</title>
 <%@ include file="include.jsp"%>
 
 <script type="text/javascript">

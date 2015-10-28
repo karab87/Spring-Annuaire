@@ -73,7 +73,7 @@ public class RechercheController {
 			}
 		
 		
-		model.addAttribute("rechercherForm", new RechercheForm());
+		model.addAttribute("rechercherForm", empf);
 		// model.addAttribute("employes",
 		// metier.EmployeParMotCle(empf.getCodeEmploye()));
 		model.addAttribute("direction", metier.listDirection());

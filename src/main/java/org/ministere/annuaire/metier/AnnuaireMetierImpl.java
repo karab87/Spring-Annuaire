@@ -310,4 +310,10 @@ public class AnnuaireMetierImpl implements IAdminMetier {
 			return dao.EmployeUniqueParMotCle(mc);
 		}
 
+		@Override
+		public List<Direction> DirectionPresentParMotCle(String mc) {
+			
+			return dao.DirectionPresentParMotCle(mc);
+		}
+
 }

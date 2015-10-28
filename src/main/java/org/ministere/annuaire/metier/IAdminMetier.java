@@ -25,6 +25,8 @@ public interface  IAdminMetier  extends IUserMetier{
 	
 	public Long ajouterDirection(Direction p, Long idDirSup);
 	
+	public List<Direction> DirectionPresentParMotCle(String mc);
+	
 	
 	public Long ajouterService(Service s);
 

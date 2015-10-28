@@ -3,7 +3,7 @@
 
 <html lang="fr">
 <head>
-
+<title>Service</title>
 	<meta charset="utf-8">
 	
 	<%@ include file="include.jsp" %>

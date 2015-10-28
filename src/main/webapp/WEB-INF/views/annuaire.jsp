@@ -109,6 +109,9 @@
 						<th>Phone</th>
 						<th>Mobile</th>
 						<th>Mobile2</th>
+						<th>Bureau</th>
+						<th>Etage</th>
+						<th>Batiment</th>
 
 						<th>Email</th>
 
@@ -122,6 +125,9 @@
 							<td>${emp.telephone }</td>
 							<td>${emp.mobile }</td>
 							<td>${emp.mobile2 }</td>
+							<td>${emp.bureau }</td>
+							<td>${emp.etage }</td>
+							<td>${emp.batiment }</td>
 
 							<td>${emp.mail }</td>
 

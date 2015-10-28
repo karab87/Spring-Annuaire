@@ -4,7 +4,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-
+<title>Enregistrement</title>
 <%@ include file="include.jsp"%>
 
 
@@ -127,7 +127,7 @@
 				<label class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-5">
 					<f:input path="mail" class="form-control"
-						placeholder=" Interphone" />
+						placeholder=" Email" />
 				</div>
 				<td><f:errors path="mail" cssClass="errors"></f:errors></td>
 
@@ -140,7 +140,7 @@
 				<label class="col-sm-2 control-label">Bureau</label>
 				<div class="col-sm-2">
 					<f:input path="bureau" class="form-control"
-						placeholder=" Interphone" />
+						placeholder=" Bureau" />
 				</div>
 				<td><f:errors path="bureau" cssClass="errors"></f:errors></td>
 
@@ -212,7 +212,7 @@
 				<label class="col-sm-2 control-label">Fonctions</label>
 				<div class="col-md-7">
 					<f:select class="form-control" path="fonctions"
-						items="${fonction}" size="2" multiple="true"
+						items="${fonction}" size="10" multiple="true"
 						itemValue="idFonction" itemLabel="nomFonction"></f:select>
 				</div>
 				<div>

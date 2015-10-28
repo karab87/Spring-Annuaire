@@ -41,15 +41,15 @@ public class Direction implements Serializable {
 	 */
 	
 	@NotEmpty(message="Entrez une valeur SVP")
-	@Length(min = 2, message="Entre 3 et 10 carracteres")
-    @Pattern(regexp = "[A-Z]*", message="Des majuscules SVP")
+	@Length(min = 2, max=10, message="Entre 2 et 10 carracteres")
+	 @Pattern(regexp = "[A-ZÀ-ÿ\\s\\’-]*", message="Rien que des Lettres")
 	private String nomDirection;
 	/**
 	 * 
 	 */
 	@NotEmpty(message="Entrez une valeur SVP")
 	@Length(min = 10, message="10 carracteres au Minimum")
-    @Pattern(regexp = "[a-zA-ZÀ-ÿ\\s\\’-]*", message="Rien que des Lettres")
+	 @Pattern(regexp = "[a-zA-ZÀ-ÿ\\s\\’-]*", message="Rien que des Lettres")
 	
 	private String description;
 	/**

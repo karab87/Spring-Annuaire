@@ -100,7 +100,7 @@ public class AdminController implements HandlerExceptionResolver {
 			model.addAttribute("directions", metier.listDirection());
 			return "directions";
 		}
-
+		
 		if (fd.getIdDirection() != null) {
 			metier.modifierDirection(fd);
 			
@@ -125,6 +125,7 @@ public class AdminController implements HandlerExceptionResolver {
 		model.addAttribute("direction", new Direction());
 		model.addAttribute("directions", metier.listDirection());
 		return "redirect:/admin/directions";
+		
 		
 
 	}
@@ -398,6 +399,7 @@ public class AdminController implements HandlerExceptionResolver {
 		if(bindingResult.hasErrors()){
 			model.addAttribute("services", metier.listService());
 			model.addAttribute("serviceForm", new ServiceForm());
+			model.addAttribute("directions", metier.listDirection());
 			return"services";
 		}
 		if(s.getNomService()!=null){

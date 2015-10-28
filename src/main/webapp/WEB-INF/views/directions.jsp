@@ -5,7 +5,7 @@
 
 
 <head>
-
+<title>Direction</title>
 <meta charset="utf-8">
 <%@ include file="include.jsp"%>
 
@@ -52,6 +52,10 @@
 								
 								<c:if test="${suppr eq true}">
 									<div class="alert alert-warning">Direction Supprimer avec success!</div>
+								</c:if>
+								
+								<c:if test="${erreur eq true}">
+									<div class="alert alert-danger">Direction deja Enregistrer!</div>
 								</c:if>
 
 								<div style="display: none">

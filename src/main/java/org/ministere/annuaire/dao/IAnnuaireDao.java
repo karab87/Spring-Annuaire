@@ -96,6 +96,8 @@ public interface IAnnuaireDao {
 	
 	public List<Direction> DirectionParMotCle(String mc);
 	
+	public List<Direction> DirectionPresentParMotCle(String mc);
+	
 	public Direction DirectionUniqueParMotCle(String mc);
 	
 	public Service ServiceUniqueParMotCle(String mc);

@@ -6,7 +6,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-
+<title>Employés</title>
 <%@ include file="include.jsp"%>
 <script type="text/javascript">
 	function confirmation(id) {
@@ -119,25 +119,25 @@
 									</div>
 									<div class="form-group">
 										<label class="col-sm-2 control-label">Email</label>
-										<div class="col-sm-5"><f:input path="mail" class="form-control" placeholder=" Interphone" /></div>
+										<div class="col-sm-5"><f:input path="mail" class="form-control" placeholder=" Email" /></div>
 										<td><f:errors path="mail" cssClass="errors"></f:errors></td>
 
 									</div>
 									<div class="form-group">
 										<label class="col-sm-2 control-label">Bureau</label>
-										<div class="col-sm-2"><f:input path="bureau" class="form-control" placeholder=" Interphone" /></div>
+										<div class="col-sm-2"><f:input path="bureau" class="form-control" placeholder=" Bureau" /></div>
 										<td><f:errors path="bureau" cssClass="errors"></f:errors></td>
 
 									</div>
 									<div class="form-group">
 										<label class="col-sm-2 control-label">Etage</label>
-										<div class="col-sm-2"><f:input path="etage"  class="form-control" placeholder=" Interphone"/></div>
+										<div class="col-sm-2"><f:input path="etage"  class="form-control" placeholder=" Etage"/></div>
 										<td><f:errors path="etage" cssClass="errors"></f:errors></td>
 
 									</div>
 									<div class="form-group">
 										<label class="col-sm-2 control-label">Batiment</label>
-										<div class="col-sm-2"><f:input path="batiment" class="form-control" placeholder=" Interphone" /></div>
+										<div class="col-sm-2"><f:input path="batiment" class="form-control" placeholder=" Batiment" /></div>
 										<td><f:errors path="batiment" cssClass="errors"></f:errors></td>
 
 									</div>

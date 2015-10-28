@@ -60,7 +60,7 @@ public class Employe implements Serializable {
 	
 	
 	@NotEmpty(message="Entrez une valeur SVP")
-	@Pattern(regexp = "[A-Z\\s\\’-]*", message="Des majuscules SVP")
+	 @Pattern(regexp = "[A-ZÀ-ÿ\\s\\’-]*", message="Rien que des Lettres")
 	private String nom;
 	
 	/**
@@ -68,7 +68,7 @@ public class Employe implements Serializable {
 	 */
 	
 	@NotEmpty(message="Entrez une valeur SVP")
-    @Pattern(regexp = "[a-zA-ZÀ-ÿ\\s\\’-]*", message="Des majuscules SVP")
+	 @Pattern(regexp = "[a-zA-ZÀ-ÿ\\s\\’-]*", message="Rien que des Lettres")
 	private String prenom;
 	
 	/**

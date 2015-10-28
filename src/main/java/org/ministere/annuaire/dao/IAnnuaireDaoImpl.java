@@ -284,9 +284,20 @@ public class IAnnuaireDaoImpl implements IAnnuaireDao {
 	}
 	
 	@Override
-	public Direction DirectionUniqueParMotCle(String mc) {
-		Query req = em.createQuery(" select d from Direction d where d.nomDirection in (select d.nomDirection from Direction d where d.nomDirection like :x)  ");
+	public List<Direction> DirectionPresentParMotCle(String mc) {
+		Query req = em.createQuery(" select d from Direction d where d.nomDirection like :x  ");
 		req.setParameter("x", "%"+mc+"%");
+		
+		
+		if(req.getResultList().isEmpty()) throw new RuntimeException("Direction "+mc+" introuvable");
+		else return req.getResultList();
+			
+	}
+	
+	@Override
+	public Direction DirectionUniqueParMotCle(String mc) {
+		Query req = em.createQuery(" select d from Direction d where d.nomDirection like :x  ");
+		req.setParameter("x", "'"+mc+"'");
 		
 		
 		return (Direction) req.getResultList().get(0);
@@ -357,7 +368,7 @@ public class IAnnuaireDaoImpl implements IAnnuaireDao {
 	public List<Employe> Recherche(String mc, Long idDir, Long idServ,
 			Long idFonc) {
 
-		String sql = " select e from Employe e JOIN e.fonctions f WHERE 1=1  ";
+		String sql = " select distinct e from Employe e JOIN e.fonctions f WHERE 1=1  ";
 
 		
 		  if (idFonc.intValue() >= 2) { 

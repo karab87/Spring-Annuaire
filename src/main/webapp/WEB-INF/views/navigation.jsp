@@ -1,5 +1,5 @@
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
-<nav class="navbar navbar-default navbar-inverse">
+<nav class="navbar navbar-default ">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
